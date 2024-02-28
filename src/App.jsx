@@ -1,9 +1,9 @@
-import PasswordGenerator from "./components/PasswordGenerator";
+import CurrencyConversion from "./components/CurrencyConversion";
 
 export default function App() {
   return (
     <>
-      <PasswordGenerator />
+      <CurrencyConversion />
     </>
   );
 }
