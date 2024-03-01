@@ -5,6 +5,7 @@ import Login from "./components/contextApi/Login";
 import Profile from "./components/contextApi/Profile";
 import UserContextProvider from "./components/contextApi/context/UserContextProvider";
 import { ThemeProvider } from "./components/contextApi/context/theme";
+import TodoApp from "./components/todos/TodoApp";
 
 export default function App() {
   const [themeMode, setThemeMode] = useState("light");
@@ -25,9 +26,10 @@ export default function App() {
     //   <Login />
     //   <Profile />
     // </UserContextProvider>
-    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <ThemeToggler />
-      <Card />
-    </ThemeProvider>
+    // <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+    //   <ThemeToggler />
+    //   <Card />
+    // </ThemeProvider>
+    <TodoApp />
   );
 }
